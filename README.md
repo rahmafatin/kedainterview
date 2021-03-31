@@ -82,18 +82,19 @@ Next steps are:
 5. php artisan key:generate
 
 Tasks to be done are:
-1. Identify the problems that exist in the project (Hint: Started from migration until seeder)
-    Note: You are not allowed to make a new migration/seeder file for the user / user type
-            ,the password in seeder is bcrypted goes by "dummydummy"
-            You must only use api.php for the "routing"
-2. Customer
+1. Identify and fix the problems that exist in the project (Hint: Started from migration until seeder) <br>
+    Note: You are not allowed to make a new migration/seeder file for the user / user type <br>
+            ,the password in seeder is bcrypted goes by "dummydummy" <br>
+            You must only use api.php for the "routing" <br>
+
+2. Create Model for Customer and Controllers that support following features:
     - Login
     - Logout
     - Message to other Customer(s)
     - View own chat history
     - Can report other Customer(s) or own feedback/bug to Staff
 
-3. Staff
+3. Create Model for Staff and Controllers that support following features:
     - Login
     - Logout
     - View all chat history
@@ -103,3 +104,6 @@ Tasks to be done are:
     - Delete Customer(s)
 
 4. Auth on each page or feature
+
+5. You can create own Model and controllers to support point no 2 & 3, for example Model "Messages" to support Customer and Staff. <br>
+    You must not use any other package, only from the composer allowed.
