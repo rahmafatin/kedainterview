@@ -65,9 +65,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Laravel Back End Keda Interview Manual
 <h1>Guidelines to do the project's</h1>
 There are several prerequisite apps/packages before making this project, such as:
-1. PHP                  : version that is used on this project is PHP 7.4.14
-2. Composer (Laravel)   : version that is used on this project is Laravel Framework 8.35.1
-3. PostgreSQL           : version that is used on this project is postgres (PostgreSQL) 13.1
+#PHP                  : version that is used on this project is PHP 7.4.14
+#Composer (Laravel)   : version that is used on this project is Laravel Framework 8.35.1
+#PostgreSQL           : version that is used on this project is postgres (PostgreSQL) 13.1
 
 Next steps are:
 1. From terminal run the command to clone repo : "link"
