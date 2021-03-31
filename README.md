@@ -44,4 +44,5 @@ Tasks to be done are:
 5. You can create own Model and controllers to support point no 2 & 3, for example Model "Messages" to support Customer and Staff. <br>
     You must not use any other packages / vendors, only from the composer or auth related are allowed which means only Laravel, Passport and JWT only.
 
-6. You are only tasked to work on the back-end side, so view is not important. Use postman for the testing / documentation.
+6. You are only tasked to work on the back-end side, so view is not important. Use postman for the documentation as for the testing you are    
+    allowed to use phpunittest or any php/Laravel testing.
