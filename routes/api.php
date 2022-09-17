@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\MessaggeController;
+use App\Http\Controllers\API\StaffController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,8 @@ Route::group(['middleware' => 'api'], function ($router) {
     Route::post('message', [MessaggeController::class, 'create']);
     Route::get('message/all', [MessaggeController::class, 'getAllMessagges']);
 
+    Route::get('staff/customers/all', [StaffController::class, 'getAllCustomers']);
+    Route::get('staff/customers/active', [StaffController::class, 'getActiveCustomers']);
 
     Route::post('auth/logout', [AuthController::class, 'logout']);
 
