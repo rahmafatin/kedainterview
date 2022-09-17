@@ -28,6 +28,7 @@ Route::group(['middleware' => 'api'], function ($router) {
 
     Route::get('staff/customers/all', [StaffController::class, 'getAllCustomers']);
     Route::get('staff/customers/active', [StaffController::class, 'getActiveCustomers']);
+    Route::delete('staff/customer', [StaffController::class, 'deleteCustomer']);
 
     Route::get('customer/message', [MessaggeController::class, 'getMessagesHistory']);
     Route::post('auth/logout', [AuthController::class, 'logout']);

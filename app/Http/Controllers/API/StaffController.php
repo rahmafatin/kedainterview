@@ -37,5 +37,12 @@ class StaffController extends Controller
         ],200);
     }
 
+    public function deleteCustomer(Request $request){
+        $user = User::find($request->id);
+
+        $user->delete();
+
+        return response()->json(['message' => 'Sucessfully delete'],200);
+    }
 
 }
