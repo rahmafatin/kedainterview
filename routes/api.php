@@ -3,7 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
-use App\Http\Controllers\SampleController;
+use App\Http\Controllers\API\MessaggeController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,15 +19,14 @@ use App\Http\Controllers\SampleController;
 Route::group(['prefix' => 'auth'], function () {
     Route::post('register', [AuthController::class, 'register']);
     Route::post('login', [AuthController::class, 'login']);
-    
-    //Route::post('login', 'API\AuthController@login');
-    
-    Route::get('userList',[AuthController::class, 'getUserList']);
 });
 
-Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
+Route::group(['middleware' => 'api'], function ($router) {
+    Route::post('message', [MessaggeController::class, 'create']);
+    Route::get('message/all', [MessaggeController::class, 'getAllMessagges']);
 
-    Route::post('logout', [AuthController::class, 'logout']);
+
+    Route::post('auth/logout', [AuthController::class, 'logout']);
 
 });
-Route::get('sample',[SampleController::class, 'index']);
+

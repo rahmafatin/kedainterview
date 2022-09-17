@@ -10,11 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
-{
-    public function index(){
-        return response(['message' => 'masuukk yeaey'],200);
-    }
-    
+{    
     public function login(Request $request){
         
         //Set the validation of requests
