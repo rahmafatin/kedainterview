@@ -23,6 +23,10 @@ Tasks to be done are:
             ,the password in seeder is bcrypted goes by "dummydummy" <br>
             You must only use api.php for the "routing" <br>
 
+    The error appear because 
+    <br> default route for database seeder on composer.json 
+    <br> namespace on seeder udertype doesn't exist
+    <br> and the working directories of user and usertype is not on database/seeder
 2. Create Model for Customer and Controllers that support following features:
     - Login
     - Logout
