@@ -45,4 +45,9 @@ class MessaggeController extends Controller
         ],200);
     }
 
+    public function getMessagesHistory(){
+        $messages = Message::where('sender_id', Auth::id())->orWhere('receiver_id', Auth::id())->get();
+
+        return response()->json(['message' => $messages],200);
+    }
 }
